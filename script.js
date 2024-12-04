@@ -39,10 +39,7 @@ checkbox.addEventListener("change", function () {
     if (colorInput && colorInput.value) {
         // Sätter vi bakgrundsfärgen till den angivna färgen
         divElement.style.backgroundColor = colorInput.value;
-    } else {
-        // Om färgen inte finns, sätter vi en standardfärg
-        divElement.style.backgroundColor = "#ffffff";
-    }
+    } 
 });
 
 // Här gör vi rutan synlig när chekboxen markerats
@@ -58,8 +55,6 @@ textFields.forEach(field => {
 
 // här kopplar vi eventlyssnare till knappen
 button.addEventListener("click", function () {
-    // H'r gör vi div-elementet synligt när knappen klickas
-    divElement.style.display = 'block';
     // Ta bort div-elementet
     divElement.remove();
 });
